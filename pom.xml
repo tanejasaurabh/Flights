@@ -39,6 +39,25 @@
                 <classifier>mule-application</classifier>
                 </configuration>
 			</plugin>
+			<plugin>
+			<groupId>org.mule.tools.maven</groupId>
+				<artifactId>mule-maven-plugin</artifactId>
+				<version>3.3.5</version>
+				<extensions>true</extensions>
+				<configuration>
+					<cloudHubDeployment>
+						<uri>https://anypoint.mulesoft.com</uri>
+						<muleVersion>4.3.0</muleVersion>
+						<username>Tanejasaurabh10</username>
+						<password>Tanejar@2351</password>
+						<environment>Sandbox</environment>
+						<applicationName>flightsapitest</applicationName>
+						<workerType>Micro</workerType>
+						<workers>1</workers>
+						<objectStoreV2>true</objectStoreV2>
+                  </cloudHubDeployment>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
